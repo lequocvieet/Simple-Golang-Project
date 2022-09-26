@@ -5,11 +5,7 @@ import (
 	jwt "golang_standard/auth"
 	res "golang_standard/utils"
 	"net/http"
-
-	"github.com/gorilla/mux"
 )
-
-var router = mux.NewRouter()
 
 func CheckJwt(next func(w http.ResponseWriter, r *http.Request)) func(w http.ResponseWriter, r *http.Request) {
 	return func(w http.ResponseWriter, r *http.Request) {

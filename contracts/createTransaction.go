@@ -15,7 +15,7 @@ import (
 )
 
 func GetContract() (*album.Album, *bind.TransactOpts) {
-	// address of etherum env
+	// address of etherum testnet node
 	infura := "https://goerli.infura.io/v3/0c84ae418d3042a490f3f8f46bd823c4"
 	client, err := ethclient.Dial(infura)
 	if err != nil {
